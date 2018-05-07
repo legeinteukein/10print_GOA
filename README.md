@@ -1,6 +1,6 @@
 # 10print_GOA
 
-### Perchè questo particolare insieme di leggi e non qualche altro?                  
+#### Perchè questo particolare insieme di leggi e non qualche altro?                  
                                 
 
 <br>
@@ -12,12 +12,12 @@
 Come vorrei si generasse il pattern
 [esempio](http://www.6502asm.com/)
 
-#### strutturazione
+### strutturazione
 arancione = predatore - carnivoro // compie spostamenti
 azzurro = preda - erbivoro // compie spostamenti
 verde = vegetazione // non compie spostamenti
 
-#### regole
+### regole
 Arancione mangia azzurro, non verde
 Azzurro mangia verde, non arancione
 Verde non mangia
