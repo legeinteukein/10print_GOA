@@ -38,8 +38,9 @@ Morte, Scissione binaria, Riproduzione, Sovrappopolazione, Figlio tetrade, Stasi
       else                                             next[x][y] = board[x][y]; // stasi
 ![goa_base](https://raw.githubusercontent.com/legeinteukein/10print_GOA/master/infinito.JPG)
 Esempio 1 - GOL Infinito, date le modifiche delle regole GOL il labirinto generato dal pattern non subisce una fase di stasi permanente.<br>
+<br>
 ![goa_base](https://raw.githubusercontent.com/legeinteukein/10print_GOA/master/Sole.JPG)
 Esempio 2 - GOL Sole, date le modifiche delle regole GOL e la modifica della disposizione delle linee, il pattern generato assume una conformazione a raggi che partono dall'angolo in alto a sinistra, da notare la disposizione delle linee, vicino ad angoli come 30°, 45°, 60°.<br>
-
+<br>
 ![goa_base](https://raw.githubusercontent.com/legeinteukein/10print_GOA/master/intreccio.JPG)
-Esempio 3 - GOL Intreccio, date le modifiche delle regole GOL e la suddivisione delle linee rispetto all'asse x e y si veniene a generare un intreccio nel quadrante in alto a sinistra.<br>
+Esempio 3 - GOL Intreccio, date le modifiche delle regole GOL e la suddivisione delle linee rispetto all'asse x e y si veniene a generare un intreccio nel quadrante in alto a sinistra.<br><br>
