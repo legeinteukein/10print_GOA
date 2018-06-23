@@ -9,20 +9,32 @@
 
 [Game of Life, Wikipedia](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)<br>
 
-Come vorrei si generasse il pattern
-[esempio](http://www.6502asm.com/)
+
+Partendo dalla struttura di Game of Life e utilizzando come spunto il loop generativo di 10print
+si sono creati tre pattern random con configurazione diverse tra loro.
+
+[esempio](http://www.6502asm.com/) generatore pattern (simulazione 10 print)
+
+[Video tutorial - 10print](https://www.youtube.com/watch?v=bEyTZ5ZZxZs)
+
+[Video tutorial - GOL](https://www.youtube.com/watch?v=FWSR_7kZuYg&t=518s)
+
 
 ### strutturazione
-arancione = predatore - carnivoro // compie spostamenti<br>
-azzurro = preda - erbivoro // compie spostamenti<br>
-verde = vegetazione // non compie spostamenti<br>
+La grafica di GOL viene sostituita con quella di 10print, al posto delle caselle (bianco - nero)
+vengono generate delle linee diagonali opposte.
+
 
 ### regole
-Arancione mangia azzurro, non verde<br>
-Azzurro mangia verde, non arancione<br>
-Verde non mangia<br>
+Le regole di GOL vengono sostituite e ampliate
+in base al numero di vicini possono attuarsi le seguenti situazioni:
+Morte, Scissione binaria, Riproduzione, Sovrappopolazione, Figlio tetrade, Stasi.
 
-Spostamenti casuali fin tanto che caselle entrano in contatto tra di loro per prossimità <br>
-(un lato o un vertice si toccano)
-
+      if      ((board[x][y] == 1) && (neighbors <  2)) next[x][y] = 0;           // morte
+      else if ((board[x][y] == 1) && (neighbors ==  3)) next[x][y] = 1;          // sissione binaria
+      else if ((board[x][y] == 0) && (neighbors == 2 )) next[x][y] = 1;          // riproduzione
+      else if ((board[x][y] == 1) && (neighbors >  4)) next[x][y] = 0;           // sovrapopolazione
+      else if ((board[x][y] == 0) && (neighbors == 4)) next[x][y] = 1;           // figlio tetrade
+      else                                             next[x][y] = board[x][y]; // stasi
+   
 ![goa_base](https://raw.githubusercontent.com/legeinteukein/10print_GOA/master/GOA.jpg)
